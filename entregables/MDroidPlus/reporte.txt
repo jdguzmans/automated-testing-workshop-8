@@ -1,0 +1,254 @@
+java -jar ./target/MDroidPlus-1.0.0.jar ./combined.jar ./target com.evancharlton.mileage ./tmp/mutants ./ false
+Selected Operators: 38
+22 NullMethodCallArgument
+23 ClosingNullCursor
+24 InvalidIndexQueryParameter
+25 InvalidSQLQuery
+26 ViewComponentNotVisible
+27 FindViewByIdReturnsNull
+28 InvalidColor
+29 InvalidViewFocus
+30 BuggyGUIListener
+31 InvalidIDFindView
+10 WrongStringResource
+32 InvalidFilePath
+11 NotParcelable
+33 NullInputStream
+12 SDKVersion
+34 NotSerializable
+13 LengthyBackEndService
+35 OOMLargeImage
+14 LongConnectionTimeOut
+36 LengthyGUIListener
+15 BluetoothAdapterAlwaysEnabled
+37 NullOutputStream
+16 NullBluetoothAdapter
+38 LengthyGUICreation
+17 InvalidURI
+18 NullGPSLocation
+19 InvalidDate
+1 ActivityNotDefined
+2 DifferentActivityIntentDefinition
+3 InvalidActivityName
+4 InvalidKeyIntentPutExtra
+5 InvalidLabel
+6 NullIntent
+7 NullValueIntentPutExtra
+8 WrongMainActivity
+9 MissingPermissionManifest
+20 NullBackEndServiceReturn
+21 InvalidMethodCallArgument
+------------
+
+Oct 06, 2018 11:23:50 AM edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor process
+SEVERE: Error running detector: ACTIVITY_NOT_DEFINED
+java.io.FileNotFoundException: ./target/AndroidManifest.xml (No such file or directory)
+        at java.io.FileInputStream.open0(Native Method)
+        at java.io.FileInputStream.open(FileInputStream.java:195)
+        at java.io.FileInputStream.<init>(FileInputStream.java:138)
+        at java.io.FileReader.<init>(FileReader.java:72)
+        at edu.wm.cs.mplus.detectors.xml.ActivityNotDefinedDetector.analyzeApp(ActivityNotDefinedDetector.java:29)
+        at edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor.process(TextBasedDetectionsProcessor.java:20)
+        at edu.wm.cs.mplus.MPlus.runMPlus(MPlus.java:60)
+        at edu.wm.cs.mplus.MPlus.main(MPlus.java:21)
+Oct 06, 2018 11:23:50 AM edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor process
+SEVERE: Error running detector: INVALID_ACTIVITY_PATH
+java.io.FileNotFoundException: /home/jdguzmans/workspace/automated-testing-repo/automated-testing-workshop-8/MDroidPlus/./target/AndroidManifest.xml (No such file or directory)
+        at java.io.FileInputStream.open0(Native Method)
+        at java.io.FileInputStream.open(FileInputStream.java:195)
+        at java.io.FileInputStream.<init>(FileInputStream.java:138)
+        at java.io.FileInputStream.<init>(FileInputStream.java:93)
+        at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+        at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+        at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+        at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+        at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+        at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+        at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+        at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+        at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+        at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+        at edu.wm.cs.mplus.detectors.xml.InvalidActivityNameDetector.analyzeApp(InvalidActivityNameDetector.java:39)
+        at edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor.process(TextBasedDetectionsProcessor.java:20)
+        at edu.wm.cs.mplus.MPlus.runMPlus(MPlus.java:60)
+        at edu.wm.cs.mplus.MPlus.main(MPlus.java:21)
+Oct 06, 2018 11:23:50 AM edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor process
+SEVERE: Error running detector: INVALID_COLOR
+java.io.FileNotFoundException: /home/jdguzmans/workspace/automated-testing-repo/automated-testing-workshop-8/MDroidPlus/./target/res/values/colors.xml (No such file or directory)
+        at java.io.FileInputStream.open0(Native Method)
+        at java.io.FileInputStream.open(FileInputStream.java:195)
+        at java.io.FileInputStream.<init>(FileInputStream.java:138)
+        at java.io.FileInputStream.<init>(FileInputStream.java:93)
+        at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+        at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+        at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+        at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+        at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+        at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+        at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+        at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+        at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+        at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+        at edu.wm.cs.mplus.detectors.xml.InvalidColorDetector.analyzeApp(InvalidColorDetector.java:40)
+        at edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor.process(TextBasedDetectionsProcessor.java:20)
+        at edu.wm.cs.mplus.MPlus.runMPlus(MPlus.java:60)
+        at edu.wm.cs.mplus.MPlus.main(MPlus.java:21)
+Oct 06, 2018 11:23:50 AM edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor process
+SEVERE: Error running detector: INVALID_LABEL
+java.io.FileNotFoundException: /home/jdguzmans/workspace/automated-testing-repo/automated-testing-workshop-8/MDroidPlus/./target/AndroidManifest.xml (No such file or directory)
+        at java.io.FileInputStream.open0(Native Method)
+        at java.io.FileInputStream.open(FileInputStream.java:195)
+        at java.io.FileInputStream.<init>(FileInputStream.java:138)
+        at java.io.FileInputStream.<init>(FileInputStream.java:93)
+        at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+        at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+        at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+        at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+        at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+        at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+        at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+        at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+        at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+        at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+        at edu.wm.cs.mplus.detectors.xml.InvalidLabelDetector.analyzeApp(InvalidLabelDetector.java:40)
+        at edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor.process(TextBasedDetectionsProcessor.java:20)
+        at edu.wm.cs.mplus.MPlus.runMPlus(MPlus.java:60)
+        at edu.wm.cs.mplus.MPlus.main(MPlus.java:21)
+Oct 06, 2018 11:23:50 AM edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor process
+SEVERE: Error running detector: MISSING_PERMISSION_MANIFEST
+java.io.FileNotFoundException: ./target/AndroidManifest.xml (No such file or directory)
+        at java.io.FileInputStream.open0(Native Method)
+        at java.io.FileInputStream.open(FileInputStream.java:195)
+        at java.io.FileInputStream.<init>(FileInputStream.java:138)
+        at java.io.FileReader.<init>(FileReader.java:72)
+        at edu.wm.cs.mplus.detectors.xml.MissingPermissionDetector.analyzeApp(MissingPermissionDetector.java:29)
+        at edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor.process(TextBasedDetectionsProcessor.java:20)
+        at edu.wm.cs.mplus.MPlus.runMPlus(MPlus.java:60)
+        at edu.wm.cs.mplus.MPlus.main(MPlus.java:21)
+Oct 06, 2018 11:23:50 AM edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor process
+SEVERE: Error running detector: WRONG_STRING_RESOURCE
+java.io.FileNotFoundException: ./target/res/values/strings.xml (No such file or directory)
+        at java.io.FileInputStream.open0(Native Method)
+        at java.io.FileInputStream.open(FileInputStream.java:195)
+        at java.io.FileInputStream.<init>(FileInputStream.java:138)
+        at java.io.FileReader.<init>(FileReader.java:72)
+        at edu.wm.cs.mplus.detectors.xml.WrongStringResourceDetector.analyzeApp(WrongStringResourceDetector.java:29)
+        at edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor.process(TextBasedDetectionsProcessor.java:20)
+        at edu.wm.cs.mplus.MPlus.runMPlus(MPlus.java:60)
+        at edu.wm.cs.mplus.MPlus.main(MPlus.java:21)
+Oct 06, 2018 11:23:50 AM edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor process
+SEVERE: Error running detector: SDK_VERSION
+java.io.FileNotFoundException: /home/jdguzmans/workspace/automated-testing-repo/automated-testing-workshop-8/MDroidPlus/./target/AndroidManifest.xml (No such file or directory)
+        at java.io.FileInputStream.open0(Native Method)
+        at java.io.FileInputStream.open(FileInputStream.java:195)
+        at java.io.FileInputStream.<init>(FileInputStream.java:138)
+        at java.io.FileInputStream.<init>(FileInputStream.java:93)
+        at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+        at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+        at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+        at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+        at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+        at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+        at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+        at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+        at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+        at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+        at edu.wm.cs.mplus.detectors.xml.SDKVersionDetector.analyzeApp(SDKVersionDetector.java:40)
+        at edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor.process(TextBasedDetectionsProcessor.java:20)
+        at edu.wm.cs.mplus.MPlus.runMPlus(MPlus.java:60)
+        at edu.wm.cs.mplus.MPlus.main(MPlus.java:21)
+Oct 06, 2018 11:23:50 AM edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor process
+SEVERE: Error running detector: WRONG_MAIN_ACTIVITY
+java.io.FileNotFoundException: /home/jdguzmans/workspace/automated-testing-repo/automated-testing-workshop-8/MDroidPlus/./target/AndroidManifest.xml (No such file or directory)
+        at java.io.FileInputStream.open0(Native Method)
+        at java.io.FileInputStream.open(FileInputStream.java:195)
+        at java.io.FileInputStream.<init>(FileInputStream.java:138)
+        at java.io.FileInputStream.<init>(FileInputStream.java:93)
+        at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+        at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+        at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+        at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+        at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:806)
+        at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+        at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+        at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+        at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+        at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+        at edu.wm.cs.mplus.detectors.xml.WrongMainActivityDetector.analyzeApp(WrongMainActivityDetector.java:44)
+        at edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor.process(TextBasedDetectionsProcessor.java:20)
+        at edu.wm.cs.mplus.MPlus.runMPlus(MPlus.java:60)
+        at edu.wm.cs.mplus.MPlus.main(MPlus.java:21)
+NullInputStream: true
+API_ID: 33; API_CALL: FileChannel.close
+API_ID: 33; API_CALL: InputStream.close
+API_ID: 33; API_CALL: BufferedInputStream.close
+API_ID: 33; API_CALL: ByteArrayInputStream.close
+API_ID: 33; API_CALL: DataInputStream.close
+API_ID: 33; API_CALL: FilterInputStream.close
+API_ID: 33; API_CALL: ObjectInputStream.close
+API_ID: 33; API_CALL: PipedInputStream.close
+API_ID: 33; API_CALL: SequenceInputStream.close
+API_ID: 33; API_CALL: StringBufferInputStream.close
+ClosingNullCursor: true
+API_ID: 23; API_CALL: Cursor.close
+InvalidIndexQueryParameter: true
+API_ID: 24; API_CALL: SQLiteDatabase.rawQuery
+OOMLargeImage: true
+API_ID: 35; API_CALL: Bitmap.createScaledBitmap
+LengthyBackEndService: true
+API_ID: 13; API_CALL: HttpClient.execute
+InvalidSQLQuery: true
+API_ID: 25; API_CALL: SQLiteDatabase.rawQuery
+LengthyGUIListener: true
+API_ID: 36; API_CALL: View.OnClickListener
+LongConnectionTimeOut: true
+API_ID: 14; API_CALL: HttpConnectionParams.setConnectionTimeout
+ViewComponentNotVisible: true
+API_ID: 26; API_CALL: Activity.findViewById
+NullOutputStream: true
+API_ID: 37; API_CALL: OutputStream.close
+API_ID: 37; API_CALL: ByteArrayOutputStream.close
+API_ID: 37; API_CALL: FileOutputStream.close
+API_ID: 37; API_CALL: FilterOutputStream.close
+API_ID: 37; API_CALL: ObjectOutputStream.close
+API_ID: 37; API_CALL: PipedOutputStream.close
+API_ID: 37; API_CALL: BufferedOutputStream.close
+API_ID: 37; API_CALL: PrintStream.close
+API_ID: 37; API_CALL: DataOutputStream.close
+BluetoothAdapterAlwaysEnabled: true
+API_ID: 15; API_CALL: BluetoothAdapter.isEnabled
+FindViewByIdReturnsNull: true
+API_ID: 27; API_CALL: Activity.findViewById
+NullBluetoothAdapter: true
+API_ID: 16; API_CALL: BluetoothAdapter.getDefaultAdapter
+InvalidURI: true
+API_ID: 17; API_CALL: URI.<init>
+NullGPSLocation: true
+API_ID: 18; API_CALL: Location.<init>
+InvalidDate: true
+API_ID: 19; API_CALL: Date.<init>
+DifferentActivityIntentDefinition: true
+API_ID: 2; API_CALL: Intent.<init>
+InvalidKeyIntentPutExtra: true
+API_ID: 4; API_CALL: Intent.putExtra
+NullIntent: true
+API_ID: 6; API_CALL: Intent.<init>
+NullValueIntentPutExtra: true
+API_ID: 7; API_CALL: Intent.putExtra
+BuggyGUIListener: true
+API_ID: 30; API_CALL: View.OnClickListener
+InvalidIDFindView: true
+API_ID: 31; API_CALL: Activity.findViewById
+NullBackEndServiceReturn: true
+API_ID: 20; API_CALL: HttpClient.execute
+InvalidFilePath: true
+API_ID: 32; API_CALL: File.<init>
+LengthyGUICreation: true
+Activites: 0
+----------------------
+AST LOCATIONS FOUND
+----------------------
+----------------------
+EXACT LOCATIONS
+----------------------
+Total Locations: 0
